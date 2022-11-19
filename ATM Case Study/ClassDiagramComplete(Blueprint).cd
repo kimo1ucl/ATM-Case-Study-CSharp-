@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ATM_Case_Study.ATM">
+    <Position X="5.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAgAQAAAAAAAiAAIAQAAAIAAAAAEAAAAAAAgAI=</HashCode>
+      <FileName>ATM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bankDatabase" />
+      <Field Name="cashDispenser" />
+      <Field Name="depositSlot" />
+      <Field Name="keypad" />
+      <Field Name="screen" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATM_Case_Study.BalanceInquiry">
+    <Position X="15" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BalanceInquiry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATM_Case_Study.BankDatabase">
+    <Position X="5.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAAAAAAAABAAAAAAAAEIAAAAAAABAAAEAAAAA=</HashCode>
+      <FileName>BankDatabase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="accounts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ATM_Case_Study.CashDispenser">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAACIAAAAAAA=</HashCode>
+      <FileName>CashDispenser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATM_Case_Study.Deposit">
+    <Position X="13.25" Y="6" Width="1.75" />
+    <InheritanceLine Type="ATM_Case_Study.Transaction" FixedToPoint="true">
+      <Path>
+        <Point X="14" Y="2.247" />
+        <Point X="14" Y="5.625" />
+        <Point X="13.76" Y="5.625" />
+        <Point X="13.76" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAQIAAAAAIAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deposit.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="keypad" />
+      <Field Name="depositSlot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATM_Case_Study.DepositSlot">
+    <Position X="9.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DepositSlot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATM_Case_Study.Keypad">
+    <Position X="9.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Keypad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATM_Case_Study.Program">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATM_Case_Study.Screen">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATM_Case_Study.Transaction">
+    <Position X="12.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAQAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transaction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="bankDatabase" />
+      <Property Name="screen" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATM_Case_Study.Withdrawal">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQCAAAQAAAAAIAAAAAAAgAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Withdrawal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="keypad" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATM_Case_Study.Account">
+    <Position X="1.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAACAAQAEAgAABAAAAAAAAAAIAA=</HashCode>
+      <FileName>Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATM_Case_Study.MenuOption" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABAAAAAAAAAAAAABIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ATM.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
